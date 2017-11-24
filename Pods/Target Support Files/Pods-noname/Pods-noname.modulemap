@@ -1,0 +1,6 @@
+framework module Pods_noname {
+  umbrella header "Pods-noname-umbrella.h"
+
+  export *
+  module * { export * }
+}

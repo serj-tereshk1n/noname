@@ -78,7 +78,7 @@ class ViewController: UIViewController, LeftMenuDelegate, RightMenuDelegate {
 //                let wdthc = NSLayoutConstraint(item: av, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 44)
 //                let hthc = NSLayoutConstraint(item: av, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: hv, attribute: NSLayoutAttribute.height, multiplier: 1, constant: 0)
 //
-//                
+//
 //                hv.addConstraints([hrzc, vtlc, wdthc, hthc])
 //            })
             
