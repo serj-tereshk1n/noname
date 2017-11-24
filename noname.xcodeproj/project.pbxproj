@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74CF0FFFA74EDC50ED70EE14 /* Pods_noname.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8DEDAFC4DBE89EC3E4E54B /* Pods_noname.framework */; };
+		CB3CA06C1FC6D54800EDA05B /* SFConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CA06A1FC6D54800EDA05B /* SFConstraints.m */; };
 		CB6C70DC1FC3141900D4CA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C70DB1FC3141900D4CA49 /* AppDelegate.swift */; };
 		CB6C70DE1FC3141900D4CA49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6C70DD1FC3141900D4CA49 /* ViewController.swift */; };
-		CB6C70E11FC3141900D4CA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6C70DF1FC3141900D4CA49 /* Main.storyboard */; };
 		CB6C70E31FC3141900D4CA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6C70E21FC3141900D4CA49 /* Assets.xcassets */; };
 		CB6C70E61FC3141900D4CA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6C70E41FC3141900D4CA49 /* LaunchScreen.storyboard */; };
+		CBE971781FC439130006FCCE /* LeftMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE971771FC439130006FCCE /* LeftMenuController.swift */; };
+		CBE9717A1FC43B100006FCCE /* RightMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE971791FC43B100006FCCE /* RightMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C8DEDAFC4DBE89EC3E4E54B /* Pods_noname.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_noname.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7823C9E76AD9734D578001B5 /* Pods-noname.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noname.release.xcconfig"; path = "Pods/Target Support Files/Pods-noname/Pods-noname.release.xcconfig"; sourceTree = "<group>"; };
+		7E032E9867106A3577472E8F /* Pods-noname.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noname.debug.xcconfig"; path = "Pods/Target Support Files/Pods-noname/Pods-noname.debug.xcconfig"; sourceTree = "<group>"; };
+		CB3CA0691FC6D54700EDA05B /* noname-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "noname-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB3CA06A1FC6D54800EDA05B /* SFConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFConstraints.m; sourceTree = "<group>"; };
+		CB3CA06B1FC6D54800EDA05B /* SFConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConstraints.h; sourceTree = "<group>"; };
 		CB6C70D81FC3141900D4CA49 /* noname.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noname.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6C70DB1FC3141900D4CA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB6C70DD1FC3141900D4CA49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB6C70E01FC3141900D4CA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB6C70E21FC3141900D4CA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6C70E51FC3141900D4CA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB6C70E71FC3141900D4CA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE971771FC439130006FCCE /* LeftMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuController.swift; sourceTree = "<group>"; };
+		CBE971791FC43B100006FCCE /* RightMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CF0FFFA74EDC50ED70EE14 /* Pods_noname.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3CA0681FC6D52600EDA05B /* CSHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CB3CA06B1FC6D54800EDA05B /* SFConstraints.h */,
+				CB3CA06A1FC6D54800EDA05B /* SFConstraints.m */,
+				CB3CA0691FC6D54700EDA05B /* noname-Bridging-Header.h */,
+			);
+			path = CSHelper;
+			sourceTree = "<group>";
+		};
 		CB6C70CF1FC3141900D4CA49 = {
 			isa = PBXGroup;
 			children = (
 				CB6C70DA1FC3141900D4CA49 /* noname */,
 				CB6C70D91FC3141900D4CA49 /* Products */,
+				EF21AE6F73BFB6F4B2DFF84F /* Pods */,
+				E1C077F5075FA41A3DC5DB75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,33 @@
 		CB6C70DA1FC3141900D4CA49 /* noname */ = {
 			isa = PBXGroup;
 			children = (
+				CB3CA0681FC6D52600EDA05B /* CSHelper */,
 				CB6C70DB1FC3141900D4CA49 /* AppDelegate.swift */,
 				CB6C70DD1FC3141900D4CA49 /* ViewController.swift */,
-				CB6C70DF1FC3141900D4CA49 /* Main.storyboard */,
+				CBE971771FC439130006FCCE /* LeftMenuController.swift */,
+				CBE971791FC43B100006FCCE /* RightMenuController.swift */,
 				CB6C70E21FC3141900D4CA49 /* Assets.xcassets */,
 				CB6C70E41FC3141900D4CA49 /* LaunchScreen.storyboard */,
 				CB6C70E71FC3141900D4CA49 /* Info.plist */,
 			);
 			path = noname;
+			sourceTree = "<group>";
+		};
+		E1C077F5075FA41A3DC5DB75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C8DEDAFC4DBE89EC3E4E54B /* Pods_noname.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF21AE6F73BFB6F4B2DFF84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E032E9867106A3577472E8F /* Pods-noname.debug.xcconfig */,
+				7823C9E76AD9734D578001B5 /* Pods-noname.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB6C70EA1FC3141900D4CA49 /* Build configuration list for PBXNativeTarget "noname" */;
 			buildPhases = (
+				7959AE6B77E7B753F3035A2F /* [CP] Check Pods Manifest.lock */,
 				CB6C70D41FC3141900D4CA49 /* Sources */,
 				CB6C70D51FC3141900D4CA49 /* Frameworks */,
 				CB6C70D61FC3141900D4CA49 /* Resources */,
+				345F0998451CD1E7E43B43BF /* [CP] Embed Pods Frameworks */,
+				65B96E9141D022BBE7AEC8B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +141,7 @@
 				TargetAttributes = {
 					CB6C70D71FC3141900D4CA49 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,33 +171,81 @@
 			files = (
 				CB6C70E61FC3141900D4CA49 /* LaunchScreen.storyboard in Resources */,
 				CB6C70E31FC3141900D4CA49 /* Assets.xcassets in Resources */,
-				CB6C70E11FC3141900D4CA49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		345F0998451CD1E7E43B43BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-noname/Pods-noname-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-noname/Pods-noname-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B96E9141D022BBE7AEC8B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-noname/Pods-noname-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7959AE6B77E7B753F3035A2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-noname-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB6C70D41FC3141900D4CA49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE9717A1FC43B100006FCCE /* RightMenuController.swift in Sources */,
 				CB6C70DE1FC3141900D4CA49 /* ViewController.swift in Sources */,
 				CB6C70DC1FC3141900D4CA49 /* AppDelegate.swift in Sources */,
+				CBE971781FC439130006FCCE /* LeftMenuController.swift in Sources */,
+				CB3CA06C1FC6D54800EDA05B /* SFConstraints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB6C70DF1FC3141900D4CA49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB6C70E01FC3141900D4CA49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB6C70E41FC3141900D4CA49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,14 +366,19 @@
 		};
 		CB6C70EB1FC3141900D4CA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E032E9867106A3577472E8F /* Pods-noname.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BS28VN32MJ;
 				INFOPLIST_FILE = noname/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.noname;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noname/CSHelper/noname-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +386,18 @@
 		};
 		CB6C70EC1FC3141900D4CA49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7823C9E76AD9734D578001B5 /* Pods-noname.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BS28VN32MJ;
 				INFOPLIST_FILE = noname/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = organization.noname;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "noname/CSHelper/noname-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

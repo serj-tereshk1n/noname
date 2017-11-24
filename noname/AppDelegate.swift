@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let mainViewController = ViewController()
+        let leftViewController = LeftMenuController()
+        let rightViewController = RightMenuController()
+        
+        SlideMenuOptions.animationDuration = 0.1
+        SlideMenuOptions.panGesturesEnabled = false
+        
+        let slideMenuController = SlideMenuController(mainViewController: UINavigationController(rootViewController: mainViewController), leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        
+        leftViewController.delegate = mainViewController
+        rightViewController.delegate = mainViewController
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.tintColor = .black
+        window?.rootViewController = slideMenuController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
